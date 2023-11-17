@@ -1,10 +1,10 @@
 public abstract class Humain {
 protected String nom ; 
-protected int force ; 
+protected double force ; 
 
 
 
-public Humain (String nom , int force ){
+public Humain (String nom , double force ){
     this.nom = nom ; 
     this.force = force ; 
 }
@@ -16,5 +16,8 @@ public String toString () {
 
 public String getNom() {
     return nom;
+}
+public double getForce() {
+    return force ;
 }
 }

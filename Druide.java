@@ -8,4 +8,11 @@ public class Druide extends Gaulois{
         this.potionMin = potionMin ; 
         
     }
+
+    public int getMax() {
+        return potionMax;
+    }
+    public int getMin() {
+        return potionMin;
+    }
 }

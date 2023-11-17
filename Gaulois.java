@@ -6,14 +6,21 @@ public Gaulois (String nom, String metier){
     this.metier = metier ; }
 
 
-public static int puissance(String nom) {
-    if (nom == "Obelix"){
+public static double puissance(String nom) {
+    if (nom == "Obélix"){
         return 15 ; 
     }
     else return 1 ; 
 }
 public String toString () {
     return super.toString()+  ", " + metier ; 
+}
+
+
+
+
+public void setForce (double newForce) {
+    force = newForce ; 
 }
 
 

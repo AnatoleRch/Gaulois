@@ -2,14 +2,21 @@ public class Romain extends Humain {
     private Grade grade ; 
 
 
-public Romain (String nom , int force, Grade grade){
-    super ( nom , force) ; 
+public Romain (String nom , Grade grade){
+    super ( nom , (double)Math.floor(Math.random() * (6 - 1) + 1)) ; 
     this.grade = grade ; 
 }
 public String toString () {
-    return super.toString()+grade  ; 
+    return super.toString()+ ", " +grade  ; 
 }
 public Grade getGrade() {
     return grade;
 }
+
+public String prendreBaffe (Gaulois g) {
+    double newForce = force - g.getForce()  * 1/6 ; 
+    g.setForce(g.getForce()- force );
+    return nom+" se prend une baffe de " + g.getNom ()+'\n' ; 
+}
+
 }

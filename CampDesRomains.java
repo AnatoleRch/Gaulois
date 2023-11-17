@@ -21,4 +21,15 @@ public class CampDesRomains {
         return "Je te salue " +b.getGrade () +" "+ b.getNom() + ", je suis " + a.getNom () + ". " ; 
 
     }
+    public String toString(){
+        return "Chef : "+chef+'\n'+"les autres  : "+lesRomains;
+    }
+
+    public String attaquer (VillageDeGaulois cible){
+        return cible.sePreparer() ; 
+    }
+    public ArrayList<Romain> getLesRomains() {
+        return lesRomains;
+    }
+
 }
