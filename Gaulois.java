@@ -15,5 +15,10 @@ public static int puissance(String nom) {
 public String toString () {
     return super.toString()+  ", " + metier ; 
 }
+
+
+public String getNom() {
+    return nom;
+}
 }
 
