@@ -2,11 +2,13 @@ public class Druide extends Gaulois{
     private int potionMax ; 
     private int potionMin ; 
 
-    public Druide (int potionMax , int potionMin, String nom, String metier ){
-        super (nom, metier) ; 
+    public Druide (int potionMax , int potionMin, String nom){
+        super (nom, "Druide") ; 
         this.potionMax = potionMax ; 
         this.potionMin = potionMin ; 
         
     }
-
+public String toString () {
+    return super.toString()+ ", " + potionMax + ", " + potionMin ; 
+}
 }

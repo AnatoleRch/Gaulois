@@ -1,5 +1,5 @@
 public class Gaulois extends Humain {
-   private String metier ; 
+   protected String metier ; 
 
 public Gaulois (String nom, String metier){
     super (nom, puissance(nom)); 
@@ -11,6 +11,9 @@ public static int puissance(String nom) {
         return 15 ; 
     }
     else return 1 ; 
+}
+public String toString () {
+    return super.toString()+  ", " + metier ; 
 }
 }
 

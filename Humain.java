@@ -9,4 +9,8 @@ public Humain (String nom , int force ){
     this.force = force ; 
 }
 
+public String toString () {
+    return this.getClass().getSimpleName()+" : " + nom + ", " +force  ; 
+}
+
 }
