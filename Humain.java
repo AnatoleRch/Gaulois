@@ -13,4 +13,8 @@ public String toString () {
     return this.getClass().getSimpleName()+" : " + nom + ", " +force  ; 
 }
 
+
+public String getNom() {
+    return nom;
+}
 }

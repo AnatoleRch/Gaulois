@@ -9,4 +9,7 @@ public Romain (String nom , int force, Grade grade){
 public String toString () {
     return super.toString()+grade  ; 
 }
+public Grade getGrade() {
+    return grade;
+}
 }
