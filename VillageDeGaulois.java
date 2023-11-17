@@ -13,7 +13,9 @@ public class VillageDeGaulois {
         this.lesGaulois = lesGaulois ; 
     }
 
-
+    public String toString(){
+        return "Chef : "+chef+'\n'+"Villageois : "+lesGaulois;
+    }
     public String seRencontrer (Gaulois a , Gaulois b) {
         return "Bonjour, je suis " + a.getNom () + ". " + "Bonjour " + a.getNom () + " moi c'est " + b.getNom () + ". " ; 
 

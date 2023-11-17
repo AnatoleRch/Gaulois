@@ -10,7 +10,7 @@ public Humain (String nom , int force ){
 }
 
 public String toString () {
-    return this.getClass().getSimpleName()+" : " + nom + ", " +force  ; 
+    return this.getClass().getSimpleName()+" : " + nom + ", force : " +force  ; 
 }
 
 
