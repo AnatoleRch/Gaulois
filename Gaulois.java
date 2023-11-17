@@ -17,8 +17,6 @@ public String toString () {
 }
 
 
-public String getNom() {
-    return nom;
-}
+
 }
 
