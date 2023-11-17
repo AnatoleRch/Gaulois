@@ -14,7 +14,7 @@ public Grade getGrade() {
 }
 
 public String prendreBaffe (Gaulois g) {
-    double newForce = force - g.getForce()  * 1/6 ; 
+    this.force = force - g.getForce()  * 1/6 ; 
     g.setForce(g.getForce()- force );
     return nom+" se prend une baffe de " + g.getNom ()+'\n' ; 
 }

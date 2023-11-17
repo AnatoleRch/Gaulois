@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.TreeSet;
+
 public class Bataille {
     private Strategie strategie ; 
     private VillageDeGaulois lesGaulois ; 
@@ -11,19 +14,22 @@ public class Bataille {
 
 
     public String combattre () {
-        String preparation = lesRomains.attaquer(lesGaulois) ; 
+        String retour = lesRomains.attaquer(lesGaulois) ; 
+        TreeSet<Gaulois> Gcombattant = new TreeSet<Gaulois>(lesGaulois.getLesGaulois());
+        TreeSet<Romain> Rcombattant = new TreeSet<Romain>(lesRomains.getLesRomains());
         if (strategie == Strategie.file ){
             
-            for (Gaulois g : lesGaulois.getLesGaulois()){
+            for (Gaulois g : Gcombattant ){
                 while (g.getForce()>0 ) {
-                    for (Romain r : lesRomains.getLesRomains()){
+                    for (Romain r : Rcombattant){
                         while (r.getForce()>0 ) {
-                            r.prendreBaffe(g) ;  
+                            retour= retour +'\n'+r.prendreBaffe(g) ;  
                         }
                     }
                 }
 
             }
+            
             return null;
         }
         else {
